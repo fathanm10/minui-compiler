@@ -1,0 +1,11 @@
+{
+	var a : integer
+	integer func func1(i:integer) = 99 + i;
+
+	a := 0
+	
+	repeat
+		put func1(a)
+		a := a + 2
+	until func1(a) > 200
+}

@@ -1,0 +1,19 @@
+{
+	var x : integer
+	proc func1(x:integer) {
+		;
+		put x
+		x := 9
+
+		put x
+		{
+			;
+			put x
+		}
+	};
+
+	x := 11
+
+	func1(x)
+	put x
+}

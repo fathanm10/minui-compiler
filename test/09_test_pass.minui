@@ -1,0 +1,17 @@
+{
+	var a : integer
+	var b : boolean
+	integer func func1(c:integer) = 11 + c
+	boolean func func2(d:boolean) = true & b;
+
+	get a
+	put func1(a)
+
+	b := false
+	
+	if func2(b) then
+		put "yes"
+	else
+		put "no"
+	end if
+}

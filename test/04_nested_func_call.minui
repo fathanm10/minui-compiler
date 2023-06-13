@@ -1,0 +1,10 @@
+{
+	integer func f1(a:integer) = a*4
+	integer func f2(b:integer) = b+2
+	integer func f3(c:integer) = c*3
+	integer func f4(d:integer) = d+6;
+	
+	if (f1(f2(f3(f4(3)))) = 116) & (f1(f4(4)) = 40) then
+        put "pass"
+    end if
+}

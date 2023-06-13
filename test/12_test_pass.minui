@@ -1,0 +1,14 @@
+{
+    var a : integer
+    integer func inc(i:integer) = i + 1
+    proc print(i:integer) {
+        ;
+        put i
+    };
+
+    a:=0
+    repeat
+        a := inc(a)
+        print(a)
+    until a > 11
+}

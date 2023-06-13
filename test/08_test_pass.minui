@@ -1,0 +1,12 @@
+{
+	integer func func1(x:integer) = x*2
+	boolean func func2(x:integer) = x>80;
+
+    put func1(39)
+    
+	if func2(91) then
+		put "yes"
+	else
+		put "no"
+	end if
+}

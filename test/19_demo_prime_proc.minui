@@ -1,0 +1,41 @@
+{
+    var n : integer
+    
+    boolean func is_divisible(x:integer, y:integer) = (((x / y) * y) = x)
+    
+    proc is_prime(x:integer) {
+        var i : integer
+        var cnt : integer
+        var res : integer;
+        
+        i := 0
+        cnt := 0
+        loop
+            if x = i then
+                exit
+            else
+                i := i + 1
+                if is_divisible(x, i) then
+                    cnt := cnt + 1
+                end if
+            end if
+        end loop
+        if cnt = 2 then
+            put x, " prima."
+        else
+            put x, " bukan prima."
+        end if
+    };
+    
+    put "Masukkan bilangan-bilangan bulat positif yang ingin dicek keprimaannya,"
+    put "lalu masukkan 0 jika sudah selesai."
+    loop
+        get n
+        if n = 0 then
+            exit
+        end if
+        
+        is_prime(n)
+    end loop
+    put "Selesai."
+}

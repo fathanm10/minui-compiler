@@ -1,0 +1,31 @@
+{
+    var x : integer
+    var y : integer
+    integer func summation(i:integer) = {
+        var return : integer;
+        if i # 0 then
+            return := summation(i - 1) + i
+        else
+            return := 0
+        end if;
+        return
+	};
+	
+    x := summation(9)
+    y := 0
+    
+    {
+        var i : integer;
+        i := 9
+        repeat
+            y := y + i
+            i := i - 1
+        until i = 0
+	}
+	
+	put "x = ", x
+	put "y = ", y
+	if x = y then
+	    put "pass"
+    end if
+}

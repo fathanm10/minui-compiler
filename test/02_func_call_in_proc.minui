@@ -1,0 +1,14 @@
+{
+    integer func f1(x:integer, y:boolean) = 4
+    boolean func f2(i:boolean, j:integer) = ~i & (j < 4)
+    proc p1(t:integer, u:boolean) {
+        var ans : integer;
+        
+        ans := f1(t, u)
+        if (ans = 4) & f2(u, t) then
+            put "pass"
+        end if
+    };
+    
+    p1(3, false)
+}

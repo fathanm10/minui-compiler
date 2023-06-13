@@ -1,0 +1,20 @@
+{
+    var x : integer
+
+    proc print(x:integer) {
+        ;
+        put x
+        {
+            var x : integer;
+            x := 1
+            repeat
+                put x
+                x := x + 1
+            until x > 11
+        }
+        put x
+    };
+
+    x:=6
+    print(x)
+}

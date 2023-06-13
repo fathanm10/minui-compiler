@@ -1,0 +1,11 @@
+{
+	var i : integer
+	integer func x(i:integer, j:integer) = i + j
+	var j : integer;
+	
+	i := 10
+	j := x(1, 2)
+	if j = 3 then
+	    put "pass"
+	end if
+}

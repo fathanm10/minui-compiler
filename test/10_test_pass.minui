@@ -1,0 +1,13 @@
+{
+    var a : integer
+	boolean func func1(x:integer) = x < 5
+	boolean func func2(y:boolean) = true & y;
+
+    get a
+    
+	if func2(func1(a)) then
+		put "not pass"
+	else
+		put "pass"
+	end if
+}

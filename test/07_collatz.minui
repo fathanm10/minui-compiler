@@ -1,0 +1,20 @@
+{
+    var n : integer
+    boolean func is_even(n:integer) = (((n / 2) * 2) = n)
+    var temp : integer;
+    
+    put "Masukkan sebuah bilangan bulat positif:"
+    get n
+    
+    repeat
+        put "|"
+        if is_even(n) then
+            n := n / 2
+        else
+            n := 3 * n + 1
+        end if
+        put n
+    until n = 1
+
+    put "pass"
+}

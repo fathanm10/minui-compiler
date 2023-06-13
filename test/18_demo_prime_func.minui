@@ -1,0 +1,51 @@
+{
+    
+    boolean func is_divisible(x:integer, y:integer) = (((x / y) * y) = x)
+
+    boolean func is_prime(n:integer) = {
+        var return : boolean;
+        
+        return := true
+        
+        if (n # 2) & (n # 3) then
+            if (n <= 1) | is_divisible(n, 2) | is_divisible(n, 3) then
+                return := false
+            else {
+                var i : integer;
+                
+                i := 5
+                loop
+                    if i * i > n then
+                        exit
+                    end if
+                    if is_divisible(n, i) | is_divisible(n, i + 2) then
+                        return := false
+                        exit
+                    end if
+                    i := i + 6
+                end loop
+	        }
+	        end if
+	    end if;
+	    
+	    return
+    }
+    
+    var n : integer
+    var m : integer;
+    
+    put "Masukkan range bilangan-bilangan bulat positif yang ingin dicek keprimaannya,"
+    put "Bilangan pertama:"
+    get n
+    put "Bilangan terakhir:"
+    get m
+    repeat
+        if is_prime(n) then
+            put n, " prima."
+        else
+            put n, " bukan prima."
+        end if
+        n := n + 1
+    until n > m
+    put "Selesai."
+}

@@ -1,0 +1,14 @@
+{
+	var a : integer
+	var b : boolean
+	integer func f1(i:integer) = 777-i
+	boolean func f2(s:boolean) = ~s & ~ false;
+
+	a := f1(39)
+	b := f2(false)
+	if b then
+	    if a = 738 then
+	        put "pass"
+	    end if
+	end if
+}

@@ -1,0 +1,20 @@
+{
+    var x : integer
+    integer func mul = x * 2
+    proc parent(flag:boolean) {
+        proc child
+        {
+            ;
+            put mul
+        };
+
+	x := 11
+	if flag then
+           put mul
+           child
+        end if
+    };
+
+    x:=6
+    parent(true)
+}

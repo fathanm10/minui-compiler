@@ -1,0 +1,26 @@
+{
+    integer func fib(n:integer) = {
+        var out : integer;
+        if n = 0 then
+            out := 0
+        else
+            if n = 1 then
+                out := 1
+            else
+                if n = 2 then
+                    out := 1
+                else 
+                    out := fib(n-1) + fib(n-2)
+                end if
+            end if
+        end if
+        ;
+        out
+    }
+    var c : integer;
+    c := 1
+    repeat
+        put fib(c)
+        c := c + 1
+    until c = 6
+}

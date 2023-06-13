@@ -1,0 +1,13 @@
+{
+	proc p(a:integer)
+	{
+		;
+		if a < 10 then
+		    put a
+		    p(a+1)
+		else 
+		    put "pass"
+		end if
+	};
+	p(1)
+}

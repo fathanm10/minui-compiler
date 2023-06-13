@@ -1,0 +1,68 @@
+{
+    
+    var index : integer
+    var n : integer
+    var a[10] : integer;
+    
+    {
+        proc quicksort(first:integer, last:integer) {
+        
+            integer func partition(l:integer, r:integer) = {
+            
+                proc swap(u:integer, v:integer) {
+                    var tmp : integer;
+                    
+                    tmp := a[u]
+                    a[u] := a[v]
+                    a[v] := tmp
+                }
+                
+                var pivot : integer
+                var i : integer
+                var j : integer;
+                    
+                pivot := a[r]
+                i := l - 1
+                    
+                j := l
+                repeat
+                    if a[j] <= pivot then
+                        i := i + 1
+                        swap(i, j)
+                    end if
+                    j := j + 1
+                until j >= r
+                    
+                swap(r, i + 1);
+                
+                i + 1
+            }
+            
+            var m : integer;
+            
+            if first < last then 
+                m := partition(first, last)
+                quicksort(first, m - 1)
+                quicksort(m + 1, last)
+            end if
+            m := 1
+        };
+        
+        put "Masukkan sepuluh bilangan untuk diurutkan:"
+        index := 0
+        repeat
+            get n
+            a[index] := n
+            index := index + 1
+        until index > 9
+        
+        quicksort(0, 9)
+        
+        put "Sepuluh bilangan sebelumnya yang sudah terurut menaik:"
+        index := 0
+        repeat
+            put a[index]
+            index := index + 1
+        until index > 9
+	}
+}

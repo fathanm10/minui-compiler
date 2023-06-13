@@ -1,0 +1,20 @@
+{
+    var x : integer
+    var status : boolean
+    proc setStatus(s:boolean) {
+        ;
+        status:=s
+    }
+    boolean func getStatus = status;
+
+    x:=1
+    status:=true
+
+    repeat
+        put x
+        x := x + 1
+	if x > 66 then
+            setStatus(false)
+        end if
+    until ~getStatus
+}
