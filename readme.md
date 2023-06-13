@@ -1,4 +1,6 @@
+# How to use JLex Parser
 Make sure you have all the source code completely.
+
 Here's the list of the files you'll need:
 1. Scanner.lex
 2. Parser.cup
@@ -10,10 +12,12 @@ Here's the list of the files you'll need:
 8. Machine.java
 
 Also, make sure you have the libraries needed and have set
-the classpath. (JLex & java_cup)
+the classpath (JLex & java_cup).
+
 You'll need it to compile the first two source codes.
 
 To run the program properly, compile all the source codes.
+
 If you have no idea how to do it, type in every single step
 of the following:
 
@@ -37,16 +41,16 @@ Now, you're ready to give the compiler a try.
 To use it, type in:
 > java parser < [input_file]
 
-If there's no error occured in the compilation,
-you'll see the target code printed.
+If there's no error occured in the compilation, you'll see the target code printed.
+
 Else you'll get error messages.
 
-You would like to save the target code to a file,
-once you're sure it's error-free. Then, you can
-try to execute the target code.
+You would like to save the target code to a file, once you're sure it's error-free. Then, you can try to execute the target code.
+
 To save and execute the target code, type in:
 > java parser < [input_file] > [target_file]
 > java Machine [target_file]
 
 Well, that's all about it. It's up to you now.
-Have fun!
+
+### **Have fun!**
